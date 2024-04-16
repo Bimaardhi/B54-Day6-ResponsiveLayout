@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #f4f3f3;
+    padding: 10px;
+  }
+  
+  .navbar-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  
+  .navbar-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .active {
+    color: orangered;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+  }
+  
+  .navbar-right {
+    margin-top: 8px;
+  }
+
+  .navbar-contact-btn {
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 30px;
+    text-decoration: none;
+  }
+  
+  .hamburger-nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+   
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hamburger-active {
+    background-color: black;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  #hamburger-button {
+    display: none;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .hamburger-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #979090;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar-link {
+      display: none;
+    }
+  
+    .navbar-contact-btn {
+      display: none;
+    }
+  
+    #hamburger-button {
+      display: block;
+    }
+
+    .card {
+     display: block;
+     width: auto;
+    }
+
+    
+    
+
+  }
+  

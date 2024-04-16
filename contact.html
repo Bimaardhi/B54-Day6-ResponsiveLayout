@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-ul">
+            <div class="navbar-left">
+                <li>
+                    <img src="./asset/logo.png" class="navbar-logo" />
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-link">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="navbar-link">
+                        My Project
+                    </a>
+                </li>
+            </div>
+            <div class="navbar-right">
+                <li>
+                    <a href="contact.html" class="navbar-contact-btn">
+                        Contact Me
+                    </a>
+                </li>
+                <button id="hamburger-button" onclick="toggleHamburger()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+        </ul>
+    </nav>
+    <div class="hamburger-container hide">
+        <a href="index.html" class="hamburger-nav-link">
+            Home
+        </a>
+        <a href="./contact.html" class="hamburger-nav-link">
+            My Project
+        </a>
+
+
+        <a href="contact.html" class="hamburger-nav-link "><button class="hamburger-active">
+                Contact Me</button></a>
+    </div>
+    <form>
+        <div>
+            <label for="name">Project Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="flex">
+            <div class="Start">
+                <label for="start">Start Date</label>
+                <input class="email" type="date" id="start">
+            </div>
+            <div class="end">
+                <label for="end">End Date</label>
+                <input type="date" id="end">
+            </div>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+        </div>
+
+        <label for="#">Technologies</label>
+        <div class="technologi">
+            <div>
+                <input class="tech" type="checkbox" id="nodejs">
+                <label for="nodejs">Node Js</label><br>
+                <input class="tech" type="checkbox" id="react">
+                <label for="react">React Js</label><br>
+            </div>
+            <div>
+                <input class="tech" type="checkbox" id="nextjs">
+                <label for="nextjs">Next Js</label><br>
+                <input class="tech" type="checkbox" id="typescript">
+                <label for="typescript">Typescript</label><br>
+            </div>
+        </div>
+        <div>
+            <label for="upload">Upload Image</label>
+            <input class="nextjs" type="file" id="upload">
+            <button class="submit" type="input" onclick="addProject(event)">Submit</button>
+        </div>
+    </form>
+
+    <div id="div-2">
+        <div>
+            <h1>My Project</h1>
+        </div>
+        <div class="bottom">
+            
+                <div class="mobile">
+                    <div id="card">
+                        <a href="./project.html"><img class="logo" src="./asset/image/card.jpg" alt="dumbways"></a>
+                        <h2>Dumbways Mobile App 2021</h2>
+                        <p class="duration">durasi 3 bulan</p>
+                        <p>App that used for dumbways student.it was deployed and can download on playstore.Happy
+                            download
+                        </p>
+                        <div>
+                            <img class="image" src="./asset/image/playstore.png" alt="playstore">
+                            <img class="image" src="./asset/image/android.png" alt="android">
+                            <img class="image" src="./asset/image/java.png" alt="java">
+                        </div>
+                        <div>
+                            <button class="edit" id="satu">edit</button>
+                            <button class="edit">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mobile">
+                    <div id="card">
+                        <a href="./project.html"><img class="logo" src="./asset/image/card.jpg" alt="dumbways"></a>
+                        <h2>Dumbways Mobile App 2021</h2>
+                        <p class="duration">durasi 3 bulan</p>
+                        <p>App that used for dumbways student.it was deployed and can download on playstore.Happy
+                            download
+                        </p>
+                        <div>
+                            <img class="image" src="./asset/image/playstore.png" alt="playstore">
+                            <img class="image" src="./asset/image/android.png" alt="android">
+                            <img class="image" src="./asset/image/java.png" alt="java">
+                        </div>
+                        <div>
+                            <button class="edit" id="satu">edit</button>
+                            <button class="edit">delete</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+                <div class="mobile">
+                    <div id="card">
+                        <a href="./project.html"><img class="logo" src="./asset/image/card.jpg" alt="dumbways"></a>
+                        <h2>Dumbways Mobile App 2021</h2>
+                        <p class="duration">durasi 3 bulan</p>
+                        <p>App that used for dumbways student.it was deployed and can download on playstore.Happy
+                            download
+                        </p>
+                        <div>
+                            <img class="image" src="./asset/image/playstore.png" alt="playstore">
+                            <img class="image" src="./asset/image/android.png" alt="android">
+                            <img class="image" src="./asset/image/java.png" alt="java">
+                        </div>
+                        <div>
+                            <button class="edit" id="satu">edit</button>
+                            <button class="edit">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="mobile" id="last">
+                    <div id="card">
+                        <a href="./project.html"><img class="logo" src="./asset/image/card.jpg" alt="dumbways"></a>
+                        <h2>Dumbways Mobile App 2021</h2>
+                        <p class="duration">durasi 3 bulan</p>
+                        <p>App that used for dumbways student.it was deployed and can download on playstore.Happy
+                            download
+                        </p>
+                        <div>
+                            <img class="image" src="./asset/image/playstore.png" alt="playstore">
+                            <img class="image" src="./asset/image/android.png" alt="android">
+                            <img class="image" src="./asset/image/java.png" alt="java">
+                        </div>
+                        <div>
+                            <button class="edit" id="satu">edit</button>
+                            <button class="edit">delete</button>
+                        </div>
+                    </div>
+                </div>
+          
+
+            <script src="./blog.js"></script>
+            <script src="./nav.js"></script>
+</body>
+
+</html>

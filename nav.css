@@ -86,7 +86,7 @@ body {
     padding-bottom: 20px;
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 675px) {
     .navbar-link {
       display: none;
     }
@@ -104,8 +104,13 @@ body {
      width: auto;
     }
 
+    img {
+     
+    }
     
-    
+    #gambar {
+      display: none;
+    }
 
   }
   
